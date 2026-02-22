@@ -1,0 +1,219 @@
+body {
+    background: #2B2624;
+    color: #F2E6E7;
+    font-family: system-ui, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-container {
+    background: #1F1B1A;
+    padding: 0;
+    border-radius: 12px;
+    max-width: 1420px;
+    height: 90px;
+    margin: 2rem auto;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 121px;
+}
+
+.nav-inner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 90px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    font-size: 18px;
+    color: #E8B77A;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #DAA24D;
+    text-shadow: 0 0 12px rgba(218, 162, 77, 0.8);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 121px;
+}
+
+.nav-icons img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: 0.2s ease;
+    transform: scale(1.2);
+}
+
+.nav-icons img:hover {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1280px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    gap: 4rem;
+}
+
+.hero h1 {
+    font-size: 3.75rem;
+    margin: 0;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 100%;
+    margin-left: -125px;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin: 0;
+    text-align: left;
+}
+
+.btn-primary {
+    background: #DAA24D;
+    color: #2B2624;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 4px;
+    box-shadow: 0 0 20px rgba(218, 162, 77, 0.4);
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #C68B3E;
+    transition: 0.2s ease;
+    box-shadow: 0 0 30px rgba(218, 162, 77, 0.8);
+    transform: translate(-2px);
+}
+
+.profile {
+    width: 430px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+
+.worked-with {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 100px;
+}
+
+.worked-with p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+
+.company-logos {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-box {
+    background: #ffffff10;
+    padding: 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: 77px;
+    flex-shrink: 0;
+}
+
+.logo-box img {
+    width: 104px;
+    height: 36px;
+    max-width: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.acn-logo {
+    height: 60px;
+    transform: scale(3.5);
+}
+
+.fairmont-logo {
+    height: 60px;
+    transform: scale(4);
+}
+
+.advocate-logo {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.7);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-right {
+        order: -1;
+    }
+
+    .profile {
+        margin: 0 auto;
+    }
+
+    .company-logos {
+        flex-wrap: wrap;
+    }
+}
