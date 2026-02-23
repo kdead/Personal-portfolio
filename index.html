@@ -11,87 +11,103 @@
   <body>
     <header class="navbar">
       <div class="nav-container">
-        <div class="nav-inner">
-          <nav class="nav-content">
-            <ul class="nav-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#case-studies">Case Studies</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#recent-work">Recent Work</a></li>
-              <li><a href="#contact">Get in Touch</a></li>
-            </ul>
-
-            <div class="nav-icons">
-              <img
-                src="images/icons8-github-logo-64.png"
-                alt="GitHub Icon"
-                class="nav-icon"
-              />
-              <img
-                src="images/linkedin.svg"
-                alt="LinkedIn Icon"
-                class="nav-icon"
-              />
-            </div>
-          </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+
+        <nav class="nav-content">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#recent-work">Recent Work</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
+          </ul>
+
+          <div class="nav-icons">
+            <img
+              src="images/icons8-github-logo-64.png"
+              alt="GitHub Icon"
+              class="nav-icon"
+            />
+            <img
+              src="images/linkedin.svg"
+              alt="LinkedIn Icon"
+              class="nav-icon"
+            />
+          </div>
+        </nav>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-left">
-        <h1>Karneisha D.</h1>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Karneisha D.</h1>
 
-        <p class="intro-text">
-          I'm a software engineer building my path one step at a time. My
-          journey into tech has been shaped by curiosity, discipline, and a
-          creative mindset that keeps me learning and improving. I come from a
-          customer-focused background, where I learned how to listen,
-          communicate clearly, and solve problems with patience and care –
-          skills that now strengthen the way I approach engineering. Every
-          project you see here reflects the growth, effort, and commitment I've
-          put into this transition.
-        </p>
+          <p class="intro-text">
+            I'm a software engineer building my path one step at a time. My
+            journey into tech has been shaped by curiosity, discipline, and a
+            creative mindset that keeps me learning and improving. I come from a
+            customer-focused background, where I learned how to listen,
+            communicate clearly, and solve problems with patience and care –
+            skills that now strengthen the way I approach engineering. Every
+            project you see here reflects the growth, effort, and commitment
+            I've put into this transition.
+          </p>
 
-        <a href="#" class="btn-primary">Let's get started ></a>
+          <a href="#" class="btn-primary">Let's get started ></a>
+        </div>
 
-        <div class="worked-with">
-          <p>Worked with:</p>
-          <div class="company-logos">
-            <div class="logo-box">
-              <img
-                src="images/Accenture.svg"
-                alt="Accenture Logo"
-                class="acn-logo"
-              />
-            </div>
+        <div class="hero-right">
+          <img
+            src="images/kd.jpeg"
+            alt="Karneisha D. Portrait"
+            class="profile"
+          />
+        </div>
+      </section>
 
-            <div class="logo-box">
-              <img src="images/GOCO_BIG.svg" alt="GoHealth Logo" />
-            </div>
+      <section class="worked-with">
+        <p>Worked with:</p>
+        <div class="company-logos">
+          <div class="logo-box">
+            <img
+              src="images/Accenture.svg"
+              alt="Accenture Logo"
+              class="acn-logo"
+            />
+          </div>
 
-            <div class="logo-box">
-              <img
-                src="images/fairmont-hotels-resorts-seeklogo.svg"
-                alt="Fairmont Hotels Logo"
-                class="fairmont-logo"
-              />
-            </div>
+          <div class="logo-box">
+            <img src="images/GOCO_BIG.svg" alt="GoHealth Logo" />
+          </div>
 
-            <div class="logo-box advocate-box">
-              <img
-                src="images/adv-logo.png"
-                alt="Advocate Logo"
-                class="advocate-logo"
-              />
-            </div>
+          <div class="logo-box">
+            <img
+              src="images/fairmont-hotels-resorts-seeklogo.svg"
+              alt="Fairmont Hotels Logo"
+              class="fairmont-logo"
+            />
+          </div>
+
+          <div class="logo-box advocate-box">
+            <img
+              src="images/adv-logo.png"
+              alt="Advocate Logo"
+              class="advocate-logo"
+            />
           </div>
         </div>
-      </div>
+      </section>
+    </main>
 
-      <div class="hero-right">
-        <img src="images/kd.jpeg" alt="Karneisha D. Portrait" class="profile" />
-      </div>
-    </section>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-container").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
