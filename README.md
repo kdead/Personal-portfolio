@@ -1,6 +1,6 @@
 # Karneisha D. | Portfolio Website
 
-A modern portfolio website showcasing my journey as a software engineer.
+A portfolio website showcasing my journey as a software engineer.
 
 ## About
 
@@ -28,7 +28,7 @@ Open index.html in your browser.
 ## Contact
 
 GitHub: @kdead
-LinkedIn: Karneisha D.
+LinkedIn: Karneisha Deadwyler
 
 ## License
 
