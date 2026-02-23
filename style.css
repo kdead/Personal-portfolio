@@ -7,7 +7,7 @@
 body {
     background: #2B2624;
     color: #F2E6E7;
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: Inter, sans-serif;
 }
 
 html,
@@ -38,6 +38,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Hamburger Menu to display on smaller screens */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -204,7 +205,7 @@ body {
     opacity: 0.85;
 }
 
-/* Specific logo adjustments - make Accenture and Fairmont bigger */
+
 .acn-logo {
     transform: scale(2);
 }
@@ -242,7 +243,7 @@ body {
     }
 }
 
-/* Standard Laptops - 1280x800 */
+/* 1280x800 */
 @media (max-width: 1280px) {
     .container {
         padding: 0 40px;
@@ -287,7 +288,6 @@ body {
     }
 }
 
-/* Small Laptops - 1024x600 */
 @media (max-width: 1024px) {
     .container {
         padding: 0 32px;
@@ -394,7 +394,7 @@ body {
     }
 }
 
-/* Mobile */
+/* Phones */
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
